@@ -1,0 +1,12 @@
+#container p{
+    color:azure;
+}
+#container {
+    background-color: rgb(232, 235, 195);
+}
+body{
+    background-image: url('../img/ST.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
