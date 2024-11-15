@@ -1,0 +1,91 @@
+/* styles.css */
+
+/* Mobile First - Estilos por defecto para móviles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #6d021c;
+}
+
+header {
+    background-color: #6d021c;
+    color: #fff;
+    padding: 1rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna para móviles */
+    gap: 1rem;
+}
+
+.cards article {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #6d021c;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media Queries para pantallas más grandes */
+
+/* Tablet */
+@media (min-width: 768px) {
+    header nav ul {
+        text-align: center;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr; /* Dos columnas en tablet */
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr; /* Tres columnas en escritorio */
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+}
+
